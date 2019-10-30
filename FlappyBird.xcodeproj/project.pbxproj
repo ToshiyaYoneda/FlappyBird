@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577E659A236992B000E287B8 /* koukaon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 577E6599236992AF00E287B8 /* koukaon.mp3 */; };
 		57D6C8C42357D2E4007FFA46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6C8C32357D2E4007FFA46 /* AppDelegate.swift */; };
 		57D6C8C62357D2E4007FFA46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6C8C52357D2E4007FFA46 /* ViewController.swift */; };
 		57D6C8C92357D2E4007FFA46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D6C8C72357D2E4007FFA46 /* Main.storyboard */; };
 		57D6C8CB2357D2E7007FFA46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D6C8CA2357D2E7007FFA46 /* Assets.xcassets */; };
 		57D6C8CE2357D2E7007FFA46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D6C8CC2357D2E7007FFA46 /* LaunchScreen.storyboard */; };
+		57D6C8D62357D5D5007FFA46 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D6C8D52357D5D5007FFA46 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		577E6599236992AF00E287B8 /* koukaon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = koukaon.mp3; sourceTree = SOURCE_ROOT; };
 		57D6C8C02357D2E4007FFA46 /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D6C8C32357D2E4007FFA46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D6C8C52357D2E4007FFA46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		57D6C8CA2357D2E7007FFA46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D6C8CD2357D2E7007FFA46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D6C8CF2357D2E7007FFA46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D6C8D52357D5D5007FFA46 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				57D6C8C32357D2E4007FFA46 /* AppDelegate.swift */,
 				57D6C8C52357D2E4007FFA46 /* ViewController.swift */,
+				57D6C8D52357D5D5007FFA46 /* GameScene.swift */,
 				57D6C8C72357D2E4007FFA46 /* Main.storyboard */,
 				57D6C8CA2357D2E7007FFA46 /* Assets.xcassets */,
 				57D6C8CC2357D2E7007FFA46 /* LaunchScreen.storyboard */,
 				57D6C8CF2357D2E7007FFA46 /* Info.plist */,
+				577E6599236992AF00E287B8 /* koukaon.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D6C8CE2357D2E7007FFA46 /* LaunchScreen.storyboard in Resources */,
+				577E659A236992B000E287B8 /* koukaon.mp3 in Resources */,
 				57D6C8CB2357D2E7007FFA46 /* Assets.xcassets in Resources */,
 				57D6C8C92357D2E4007FFA46 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D6C8D62357D5D5007FFA46 /* GameScene.swift in Sources */,
 				57D6C8C62357D2E4007FFA46 /* ViewController.swift in Sources */,
 				57D6C8C42357D2E4007FFA46 /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.toshiya.yoneda.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FlappyBird/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.toshiya.yoneda.FlappyBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
